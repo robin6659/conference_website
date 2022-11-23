@@ -1,0 +1,34 @@
+
+.accordion-button:not(.collapsed) {
+  background: #FD7E14;
+  color: #ffffff;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.form-area {
+  padding-top: 7%;
+}
+.single-form {
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+.left {
+  background: rgb(153, 83, 66);
+  padding: 200px 230px;
+}
+.left h2 {
+  font-family: poppins;
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+}
+.left h2 span {
+  font-weight: 100;
+}
+.single-form {
+  background: #fff;
+}
+/* text area expand */
+textarea{
+  resize: none !important; 
+}

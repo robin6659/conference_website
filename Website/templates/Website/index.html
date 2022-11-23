@@ -1,0 +1,606 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--css containing margin and padding-->
+    <link rel="stylesheet" href="{% static 'Website/alignment.css'%}">
+    <!-- faq CSS -->
+    <link rel="stylesheet" href="{% static 'Website/faq.css'%}">
+    <!-- tracks CSS -->
+    <link rel="stylesheet" href="{% static 'Website/speaker.css'%}">
+    <!-- venue CSS -->
+    <link rel="stylesheet" href="{% static 'Website/venue.css'%}">
+    <!-- awards CSS -->
+    <link rel="stylesheet" href="{% static 'Website/awards.css'%}">
+    <!-- schedule CSS -->
+    <link rel="stylesheet" href="{% static 'Website/schedule.css'%}">
+    <!-- ========move to top======== -->
+    <style>
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color:#FD7E14;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50px;
+    }
+
+    #myBtn:hover {
+      background: #f06d02 !important;
+    } 
+  </style> 
+</head>
+<body>
+    <!-- ========== navigation ========== -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand " href="{% url 'Website:index' %}"> <img src="{% static 'assets/logo.svg'%}" width="90"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item btn btn-light">
+                      <a class="nav-link active" aria-current="page" href="{% url 'Website:index' %}">Home</a> 
+                    </li>
+                    <li class="nav-item dropdown btn btn-light">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            For Authors
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'Website:callforpaper' %}">Call For Papers</a></li>
+                            <li><a class="dropdown-item" href="{% url 'Website:papersub' %}">Paper Submission</a></li>
+                            <li><a class="dropdown-item" href="{% url 'Website:acceptedpub' %}">Accepetd Papers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item btn btn-light">
+                        <a class="nav-link active" href="{% url 'Website:reg' %}">Registration</a>
+                    </li>
+                    <li class="nav-item btn btn-light">
+                        <a class="nav-link active" href="#Schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item btn btn-light">
+                        <a class="nav-link active" href="#Speakers">Speakers</a>
+                    </li>
+                    <li class="nav-item btn btn-light">
+                        <a class="nav-link active" href="#Awards">Awards</a>
+                    </li>
+                    <li class="nav-item btn btn-light">
+                        <a class="nav-link active" href="#Venue">Venue</a>
+                    </li>
+                    <li class="nav-item btn btn-light">
+                        <a class="nav-link active"  href="#Help">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- end of nav -->
+
+    <!-- move to top button ====== -->
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- end of move to top button-->
+
+    <!-- ========== header ========== -->
+
+    <section>
+      <div class="header-container">
+        <header>
+          <div class="container text-center" >
+            <h1 class="p-3">International Conference on Language Technologies</h1>
+            <h4 class="p-3">Lorem ipsum Dolor Sit Amet Consectetur Adipisicing</h4>
+            <a href="{% url 'Website:reg' %}"><button type="button" class="btn primary-button btn-lg ">Register Now</button></a>
+          </div>
+        </header>
+      </div>
+    </section> <!-- end of header -->
+
+
+    <!-- ========== about the conference ======== -->
+
+    <section class="container sec-margin ">
+        <!-- <h3 class="pb-2">ABOUT THE CONFERENCE</h3> -->
+        <p class="line-space">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nostrum eius laudantium necessitatibus unde dolor voluptate autem blanditiis fuga ab adipisci,
+            itaque facilis.
+            Odio minima, animi commodi ipsum dignissimos libero aspernatur!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nostrum eius laudantium necessitatibus unde dolor voluptate autem blanditiis fuga ab adipisci,
+            itaque facilis.
+            Odio minima, animi commodi ipsum dignissimos libero aspernatur!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nostrum eius laudantium necessitatibus unde dolor voluptate autem blanditiis fuga ab adipisci,
+            itaque facilis.
+        </p>
+        <p class="line-space">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nostrum eius laudantium necessitatibus unde dolor voluptate autem blanditiis fuga ab adipisci,
+            itaque facilis.
+            Odio minima, animi commodi ipsum dignissimos libero aspernatur!
+            Odio minima, animi commodi ipsum dignissimos libero aspernatur!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nostrum eius laudantium necessitatibus unde dolor voluptate autem blanditiis fuga ab adipisci,
+            itaque facilis.
+            Odio minima, animi commodi ipsum dignissimos libero aspernatur!
+        </p>
+    </section> <!-- end of about the conference -->
+
+
+    <!-- ========== speakers details ========== -->
+
+    <section id="Speakers" class="container sec-margin">
+      <div class="row">
+        <!-- speaker card -->
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class=" pt-5">
+            <div class="card speaker-card">
+              <img src="{% static 'assets/steve.jpg'%}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Speaker Name</h5>
+                <h6 class="card-subtitle mb-2 ">Designation</h6>
+                <h6 class="card-subtitle mb-2 ">Organization Name</h6>
+              </div>
+            </div>
+          </div>
+        </div><!--end of speaker card-->
+        <!-- speaker card -->
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class=" pt-5">
+            <div class="card speaker-card">
+              <img src="{% static 'assets/steve.jpg'%}"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Speaker Name</h5>
+                <h6 class="card-subtitle mb-2 ">Designation</h6>
+                <h6 class="card-subtitle mb-2 ">Organization Name</h6>
+              </div>
+            </div>
+          </div>
+        </div><!--end of speaker card-->
+        <!-- track card -->
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class=" pt-5">
+            <div class="card speaker-card">
+              <img src="{% static 'assets/steve.jpg'%}"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Speaker Name</h5>
+                <h6 class="card-subtitle mb-2 ">Designation</h6>
+                <h6 class="card-subtitle mb-2 ">Organization Name</h6>
+              </div>
+            </div>
+          </div>
+        </div><!--end of speaker card-->
+        <!-- speaker card -->
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class=" pt-5">
+            <div class="card speaker-card">
+              <img src="{% static 'assets/steve.jpg'%}"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Speaker Name</h5>
+                <h6 class="card-subtitle mb-2 ">Designation</h6>
+                <h6 class="card-subtitle mb-2 ">Organization Name</h6>
+              </div>
+            </div>
+          </div>
+        </div><!--end of speaker card-->
+        <!-- speaker card -->
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class=" pt-5">
+            <div class="card speaker-card">
+              <img src="{% static 'assets/steve.jpg'%}"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Speaker Name</h5>
+                <h6 class="card-subtitle mb-2 ">Designation</h6>
+                <h6 class="card-subtitle mb-2 ">Organization Name</h6>
+              </div>
+            </div>
+          </div>
+        </div><!--end of speaker card-->
+        <!-- speaker card -->
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class=" pt-5">
+            <div class="card speaker-card">
+              <img src="{% static 'assets/steve.jpg'%}"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Speaker Name</h5>
+                <h6 class="card-subtitle mb-2 ">Designation</h6>
+                <h6 class="card-subtitle mb-2 ">Organization Name</h6>
+              </div>
+            </div>
+          </div>
+        </div><!--end of speaker card-->  
+      </div>
+    </section><!--end of speakers details-->
+
+
+    <!-- ========== about ICFOSS ========== -->
+
+    <section class="container index-sec-margin">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="video-container border border-secondary  p-3">
+          <iframe src="https://www.youtube.com/embed/myQ-BfJ0rkk" title="ICFOSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <p class="line-space">ICFOSS is the outcome of a decade of work by Free Software enthusiasts, advocates, developers and supporters in the state of Kerala and outside.
+             Recognizing the strides made by the FOSS community in Kerala, the Government of Kerala implimented the International Centre for Free and Open Source Software (ICFOSS) in 2009. 
+          </p>
+          <p class="line-space">ICFOSS today carries out a number of FOSS-related activities in a model that brings together Academia,
+             Industry, Government and the FOSS Community. Activities of ICFOSS presently includes R & D; 
+             Support to FOSS software development; FOSS Pilot Programs; technology assistance to Government programs and institutions; Local Language computing; Student FOSS activities; Internet Governance; Studies on FOSS; Exploring FOSS Certification; and Capacity Building of students to enter the FOSS Community.
+          </p>
+        </div>
+      </div>
+    </section><!--end of about icfoss-->
+
+
+    <!-- ========== Awards ========== -->
+
+
+    <Section id="Awards" class="container index-sec-margin" >
+      <h1 class="text-center">Awards</h1>
+      <div class="d-flex align-items-center award-wrapper sec-margin">
+        <div class="col-lg-2 col-md-2">
+          <img src="{% static 'assets/award.png'%}"  alt="award_image" class="img-container" >
+        </div>
+        <div class="ml-2 col-lg-10 col-md-10">
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur ipsum molestiae a doloremque cumque sed ea vitae, odio laborum magni! Sed quaerat aliquam excepturi impedit aperiam, eius quidem laborum.</p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center award-wrapper sec-margin">
+         <div class="col-lg-2 col-md-2"> 
+          <img src="{% static 'assets/award.png'%}" alt="award_image" class="img-container" >
+        </div>
+        <div class="col-lg-10 ml-2 col-md-10 ml-2">
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur ipsum molestiae a doloremque cumque sed ea vitae, odio laborum magni! Sed quaerat aliquam excepturi impedit aperiam, eius quidem laborum.</p>
+        </div>
+    </div>
+    <div class="d-flex align-items-center award-wrapper sec-margin">
+       <div class="col-lg-2 col-md-2"> 
+        <img src="{% static 'assets/award.png'%}" alt="award_image" class="img-container" >
+      </div>
+      <div class="ml-2 col-lg-10 col-md-10">
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur ipsum molestiae a doloremque cumque sed ea vitae, odio laborum magni! Sed quaerat aliquam excepturi impedit aperiam, eius quidem laborum.</p>
+      </div>
+    </div>
+  </Section><!--end of awards-->
+
+
+  <!-- ========== schedule ========== -->
+
+  <section id="Schedule" class="container sec-margin">
+    <div class="wrapper">
+          <div class="box">
+            <input checked="checked" id="box1" name="box" type="radio"> 
+            <label for="box1" class="col-lg-4 col-md-4 col-sm-3 col-xs-12">DAY1</label>
+            <div class="content">
+                <h4>Day 1 Programmes</h4>
+                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+                <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            </div>
+            <input id="box2" name="box" type="radio"> 
+            <label for="box2" class="col-lg-4 col-md-4 col-sm-3 col-xs-12">DAY2</label>
+            <div class="content">
+                <h4>Day 2 Programmes</h4>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</p>
+                <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+            </div>
+            <input id="box3" name="box" type="radio"> 
+            <label for="box3" class="col-lg-4 col-md-4 col-sm-3 col-xs-12">DAY3</label>
+            <div class="content">
+                <h4>Day 3 Programmes</h4>
+                <p>JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. avaScript is high-level, often just-in-time compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions.</p>
+                <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. Over 97% of websites use it client-side for web page behavior,often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on the user's device.</p>
+            </div>
+        </div>
+    </div>
+  </section> <!--end of schedule-->
+
+
+    <!-- ========== Venue ========== -->
+
+    <section id="Venue" class="container-fluid section-bg-color p-4 index-sec-margin">
+      <div class="container">
+        <h2 class=" text-center">Venue</h2>
+        <div class="row div-margin">
+          <div  class="col-lg-6 col-md-6 col-sm-12">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, et aut! Expedita neque ea perspiciatis pariatur, cumque quos aliquid eaque laboriosam asperiores sit nam voluptatibus consequatur ipsam a, atque illo.</p>
+          </div>
+          <div  class="col-lg-6 col-md-6 col-sm-12">
+            <p class="m-0">International Centre for Free and Open Source Software</p>
+            <p class="m-0">Swatantra,</p>
+            <p class="m-0">South Pavilion, Sports Hub,</p>
+            <p class="m-0">Karyavattom, Trivandrum,</p>
+            <p class="m-0">Kerala 695581</p>
+          </div>
+        </div>
+        <div class="div-margin">
+          <div class="map-column">
+            <div class="maparea">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15781.052987190249!2d76.8843399!3d8.5706673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xffd05608a23b6d0d!2sInternational%20Centre%20for%20Free%20and%20Open%20Source%20Software%20(ICFOSS)!5e0!3m2!1sen!2sin!4v1668491567441!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy" class="map-frame"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!--end of venue-->
+
+
+    <!-- ========== Help ========== -->
+
+    <section id="Help" class="sec-margin">
+            <div class="container text-dark">
+              <div id="help" class=" row" style="padding:60px 20px;">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="p-3" data-aos="fade-up">
+                    <div class="row gy-6 pt-1">
+                      <!-- <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"> -->
+                      <div class="content px-xl-9">
+                        <h3>Frequently Asked <strong>Questions</strong></h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                        </p>
+                      </div>
+                      <div class="accordion accordion-flush px-xl-5 faq" id="faqlist">
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-1">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              Non consectetur a erat nam at lectus urna duis?
+                            </button>
+                          </h3>
+                          <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                              curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-2">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                            </button>
+                          </h3>
+                          <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit
+                              laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+                              Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa
+                              tincidunt dui.
+                            </div>
+                          </div>
+                        </div><!-- # Faq item-->
+  
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-3">
+                              <i class="bi bi-question-circle question-icon"></i>
+                             Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                            </button>
+                          </h3>
+                          <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                              elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                              pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at
+                              elementum eu facilisis sed odio morbi quis
+                            </div>
+                          </div>
+                        </div><!-- # Faq item-->
+  
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-4">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                            </button>
+                          </h3>
+                          <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit
+                              laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+                              Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa
+                              tincidunt dui.
+                            </div>
+                          </div>
+                        </div><!-- # Faq item-->
+  
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-5">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                            </button>
+                          </h3>
+                          <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est
+                              ante
+                              in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing
+                              bibendum est. Purus gravida quis blandit turpis cursus in
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="right single-form p-5">
+                    <i class="fa fa-caret-left"></i>
+                    <form action="{% url 'Website:faqpost' %}" method="post">
+                      {% csrf_token %}
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label> 
+                        <input type="text" class="form-control" placeholder="full-name" id="name" name="name"
+                          aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="contact_number" class="form-label">Contact Number</label>
+                        <input type="tel" placeholder="phone number" class="form-control" name= "contact_number" id="contact_number"
+                          aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" placeholder="email@address" name="email" id="email"
+                          aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea type="text" class="form-control" placeholder="" name = "message"
+                          id="message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary secondary-button">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section><!--end of help-->
+
+    <!--========== Footer ========== -->
+
+
+   <footer class="text-center text-lg-start bg-white">
+     <!-- Section: Social media -->
+     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+     </section>
+     <!-- Section: Social media -->
+  
+     <!-- Section: Links  -->
+     <section class="">
+       <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <p>
+             ICFOSS<br> Swatantra, South Pavilion<br>Sports Hub,Karyavattom<br>Trivandrum - 695 581 ,<br>
+              Kerala, India
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <!-- <h6 class="text-uppercase fw-bold mb-4">
+              Lorem ipsum
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">lorem ipsum</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">ipsum</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">dolor sit</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">amet</a>
+            </p> -->
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <!-- <h6 class="text-uppercase fw-bold mb-4">
+              lorem ipsum
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">dolor</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">sit amet</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">consectetur</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">adipiscing</a>
+            </p> -->
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <!-- <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p> -->
+            <p>
+              <i class="fas fa-envelope  text-secondary"></i>
+              info@icfoss.in
+            </p>
+            <p><i class="fas fa-phone  text-secondary"></i>+91 471-2413012</p>
+            <p><i class="fas fa-print  text-secondary"></i>+91-9400225962</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="footer-bg-color text-center p-4" >
+      Designed and developed by e-Governance R&D Lab <strong>ICFOSS</strong>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer end -->
+  <!-- /* java Script */ -->
+  <script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+  </script>
+</body>
+</body>

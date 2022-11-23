@@ -1,0 +1,25 @@
+ /* buttons-participates/authors */
+  .banner-btn{
+    font-weight: 700;
+  }
+  @media screen and (max-width: 576px) {
+    .banner-button {
+      text-align: center;
+      
+    }
+    .banner-buttons {
+      text-align: center;
+      
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .banner-button {
+      text-align: end;
+      
+    }
+    .banner-buttons {
+      text-align: start;
+      
+    }
+  }
+

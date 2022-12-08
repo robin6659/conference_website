@@ -1,19 +1,19 @@
-.award-card{
+/* .award-card{
     border: none !important;
-}
+} */
 /* awards */
 .award-wrapper{
-    padding: .75em;
+    /* padding: .75em; */
     box-shadow: 0 10px 20px rgba(0,0,0,.15);
 }
 .img-container{
     width:100%;
 }
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
    .award-wrapper{
     flex-direction: column;
    }
    .img-container{
     width: 100%;
    }
-}
+} */

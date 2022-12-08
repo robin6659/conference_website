@@ -1,5 +1,5 @@
 
-.accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed){
   background: #FD7E14;
   color: #ffffff;
 }
@@ -10,7 +10,13 @@
   padding-top: 7%;
 }
 .single-form {
-  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.15);
+  border-radius: 30px !important;
+  -webkit-border-radius: 30px !important;
+  -moz-border-radius: 30px !important;
+  -ms-border-radius: 30px !important;
+  -o-border-radius: 30px !important;
 }
 .left {
   background: rgb(153, 83, 66);
@@ -25,10 +31,14 @@
 .left h2 span {
   font-weight: 100;
 }
-.single-form {
-  background: #fff;
-}
+
 /* text area expand */
 textarea{
-  resize: none !important; 
+  resize: none !important;
+}
+
+.iconstyle
+{
+  margin-right: 10px;
+  color: #FD7E14;
 }

@@ -34,6 +34,11 @@ body{
     /* font-weight: 500 !important; 
     color: #FD7E14 !important;
 } */
+.upadte-content{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #3a3b3c !important;
+}
 /* navigation dropdown hover effect */
 
 
@@ -74,7 +79,14 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+.header-container-white{
+    height: calc(100vh - 60px);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* section margin for index page */
 

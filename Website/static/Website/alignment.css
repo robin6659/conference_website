@@ -1,7 +1,39 @@
-body{
-    background-color: #fff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+body{
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px !important;
+}
+/* body{
+    background-color: #fff;
+    /* font-family: 'Open Sans', sans-serif !important;*/
+    /* font-size: 20px !important; 
+} */
+/* navbar */
+.nav-background{
+    background-color: #4f5050 !important;
+
+}
+.nav-link{
+    color: #fff !important;
+    margin-left: 10px !important;
+    font-weight: 500 !important;
+}
+.nav-link:hover{
+    color: #f06d02 !important;
+
+}
+.dropdown-item{
+    font-weight: 500 !important;
+}
+.dropdown-item:hover{
+    color: #fff !important;
+    background-color: #f06d02 !important;
+}
+/* .nav-item:hover{
+    /* font-weight: 500 !important; 
+    color: #FD7E14 !important;
+} */
 /* navigation dropdown hover effect */
 
 
@@ -9,16 +41,34 @@ body{
     .dropdown:hover > .dropdown-menu {
       display: block;
       margin-top: 0;
-      box-shadow: rgb(55, 146, 221);
+      /* box-shadow: rgb(55, 146, 221); */
     }
 }
-
+@media (max-width: 480px){
+    .navbar-nav{
+        background: #000;
+        border-bottom:1px solid #000;
+    }
+    .nav-link{
+        color: #fff !important;
+    }
+    .dropdown-item{
+        color: #fff !important;
+    }
+    .dropdown-menu{
+        background: #000;
+        border: none !important;
+    }
+    .navbar-toggler{
+        border: none !important;
+    }
+}
 
 /* header section */
 
 .header-container{
-    height: calc(100vh - 80px);
-    background-color: white;
+    height: calc(100vh - 60px);
+    background-color: #3a3b3c;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,11 +121,12 @@ body{
     color: #fff;
     background-color:  #FD7E14  !important;
     border: 2px solid #FD7E14;
-    border-radius: 8px !important;
-    -webkit-border-radius: 8px !important;
-    -moz-border-radius: 8px !important;
-    -ms-border-radius: 8px !important;
-    -o-border-radius: 8px !important;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+    font-weight: 500;
 }
 .primary-button:hover{
     color: #fff !important;
@@ -83,18 +134,20 @@ body{
 }
 
 .primary-button-outlined{
-    color: #000 ;
-    border: 2px solid #000;
-    border-radius: 8px !important;
-    -webkit-border-radius: 8px !important;
-    -moz-border-radius: 8px !important;
-    -ms-border-radius: 8px !important;
-    -o-border-radius: 8px !important;
+    color: #fff ;
+    border: 2px solid #fff;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+    font-weight: 500;
 }
 .primary-button-outlined:hover{
-    color: #fff;
-    background-color:  #000  !important
+    color: #000;
+    background-color:  #fff  !important
 }
+
 /* ========== about ICFOSS ========== */
 
 
@@ -158,4 +211,48 @@ iframe{
 }
 .footer-link:hover{
     color: #FD7E14 !important;
+}
+
+/* .member{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} */
+.member{
+    transition: transform .2s;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+@media (max-width:1000px) {
+    .member{
+        height: 150px;
+        width: 150px;
+    }
+}
+/* ========== Committe ========== */
+.member-name{
+    font-size: 18px;
+    font-weight: 600 !important;
+}
+.member-position{
+    font-size: 14px;
+    font-weight: 400 !important;
+}
+
+.bold-heading-white{
+    color: #fff !important;
+    font-size: 40px !important;
+    font-weight: 400 !important;
+}
+.sub-heading-white{
+    color: #fff !important;
+    font-size: 18px !important;
+}
+.sub-heading-sm-white{
+    color: #fff !important;
 }

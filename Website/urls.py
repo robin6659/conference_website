@@ -10,5 +10,7 @@ urlpatterns = [
     path('papersub/',views.papersub,name="papersub"),  
     path('acceptedpub/',views.acceptedpub,name="acceptedpub"),
     path('faqpost/', views.faq, name= "faqpost"),
+    path('committee/', views.committee, name= "committee"),
+    # path('update/', views.update, name= "update"),
     # path('<str:name>/',views.greet,name="greet"),  
 ]

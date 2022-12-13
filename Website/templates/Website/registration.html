@@ -19,10 +19,7 @@
 
 <body>
      <!-- ========== navigation ========== -->
-     
      {% block content %}
-
-     
     <!-- Starting first section-text section -->
     <section class="">
         <div class="container ">
@@ -31,33 +28,39 @@
                 <p class="pb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Nostrum eius laudantium necessitatibus unde dolor voluptate autem blanditiis fuga ab adipisci,
                     itaque facilis.
-                    Odio minima, animi commodi ipsum dignissimos libero aspernatur!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Odio minima, animi commodi ipsum dignissimos libero aspernatur!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Nostrum eius laudantium necessitatibus unde dolor voluptate autem blanditiis fuga ab adipisci,
                     itaque facilis.
-                    Odio minima, animi commodi ipsum dignissimos libero aspernatur!</p>
-
-                <p>Lorem ipsum dolor sit ametLorem ipsum dolor amet
-                    consectetur.
+                    Odio minima, animi commodi ipsum dignissimos libero aspernatur!
                 </p>
             </div>
-            <div class="div-margin row text-center">
+            <div class="div-margin row ">
                 <div class="col-lg-6">
-                    <button type="button" class="btn btn-primary">Author</button>
-                </div>
-                <div class="col-lg-6">
-                    <button type="button" class="btn btn-primary">Participant</button>
-                </div>
-            </div>
-             <!-- seperate div for text and button -->
-             <!-- <div class="container">
-                <div class="container my-3">
-                    <div class="col-md-12 text-center">
-                        <button type="button" class="btn btn-primary">ForAuthor</button>
-                        <button type="button" class="btn btn-primary">Participants</button>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nostrum eius laudantium necessitatibus unde dolor voluptate autem blanditiis fuga ab adipisci,
+                        itaque facilis.
+                        Odio minima, animi commodi ipsum dignissimos libero aspernatur!
+                    </p>
+                    <div class="text-center">
+                        <a href="{% url 'Website:reg' %}"><button type="button" class="btn primary-button p-1 btn-lg ">Register as Author</button></a>
+                        <!-- <a href="{% url 'Website:reg' %}"><button type="button" class="btn primary-button-outlined p-1 btn-lg ms-3">Register As Author</button></a> -->
+                        <!-- <button type="button" class="btn btn-primary">Author</button> -->
                     </div>
                 </div>
-              </div> -->
+                <div class="col-lg-6">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nostrum eius laudantium necessitatibus unde dolor voluptate autem blanditiis fuga ab adipisci,
+                        itaque facilis.
+                        Odio minima, animi commodi ipsum dignissimos libero aspernatur!
+                    </p>
+                    <div class="text-center">
+                        <a href="{% url 'Website:reg' %}"><button type="button" class="btn primary-button p-1 btn-lg ">Register as Participant</button></a>
+                        <!-- <a href="{% url 'Website:reg' %}"><button type="button" class="btn primary-button-outlined p-1 btn-lg ms-3">Register As Participant</button></a> -->
+                        <!-- <button type="button" class="btn btn-primary">Participant</button> -->
+                    </div>
+                </div>
+            </div>
     </section>
     <section>
         <!-- registation category -->
@@ -65,7 +68,32 @@
             <div class="pt-5">
                 <h3>Fee Details</h3>
                 <div class="row">
-                    <!-- table 1-->
+                    <!-- Author table  -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Author</th>
+                                    <th scope="col">Fee Structure</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">PG Students</th>
+                                    <td>750</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Research scholar</th>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Faculty member/Indrustrial persons</th>
+                                    <td colspan="4">2000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Participant table-->
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <table class="table">
                             <thead class="table-dark">
@@ -81,48 +109,18 @@
 
                                 </tr>
                                 <tr>
-                                    <th scope="row">Faculty</th>
+                                    <th scope="row">Faculty member</th>
                                     <td>800</td>
 
                                 </tr>
                                 <tr>
                                     <th scope="row">Indrustrial persons</th>
-                                    <td colspan="4">......</td>
+                                    <td colspan="4">800</td>
 
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <!-- Second table  -->
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <table class="table">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th scope="col">Author</th>
-                                    <th scope="col">Fee Structure</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">PG Students</th>
-                                    <td>750</td>
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">Research scholar</th>
-                                    <td>1000</td>
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">Faculty/Indrustrial persons</th>
-                                    <td colspan="4">2000</td>
-
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
                 </div>
             </div>
         </div>

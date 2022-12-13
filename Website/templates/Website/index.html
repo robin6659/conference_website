@@ -35,6 +35,7 @@
   <!-- <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script> -->
     <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
     <!-- ========move to top======== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
     #myBtn {
       display: none;
@@ -146,7 +147,6 @@
         </div>
     </nav> <!-- end of nav -->
     {% block content %}
-    
     <!-- move to top button ====== -->
 
       <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -157,13 +157,14 @@
     <!-- ========== header ========== -->
 
     <section class="header-container">
-      <div class="container p-0 m-0">
+      <div class="container p-0 m-0" >
         <header class="row">
           <div class="col-lg-7 ">
-            <h1 class="bold-heading-white">International Conference on FOSS Approaches towards Computational Intelligence and Language Technology<br>(FOSS-CILT23) </h1>
+            <h1 class="bold-heading-white">International Conference on Open source Computational Intelligence and Language
+              Technology <br>(ICCILT 2023)</h1>
               <p class="mt-4 mb-2 sub-heading-sm-white d-flex align-items-center">
                 <ion-icon name="location-outline" class="me-2"></ion-icon>
-                ICFOSS , Thiruvanathapuram, </p>
+                ICFOSS , Trivandrum</p>
             <p class="m-0 sub-heading-sm-white d-flex align-items-center">
               <ion-icon name="calendar-outline" class="me-2"></ion-icon>
               2 - 6 February , 2023
@@ -234,7 +235,7 @@
               <path d="M662.8 57.6L667.7 77.9L659.5 71.2L640.3 99.5L577.7 59.8L676.1 33.3L662.8 57.6Z" fill="#FF9827"/>
               <path opacity="0.46" d="M667.7 77.9L659.5 71.2L658.4 68.1L582.7 61.2L662.8 57.6L667.7 77.9Z" fill="#323233"/>
               <path opacity="0.28" d="M634.3 512.6C640.265 512.6 645.1 507.765 645.1 501.8C645.1 495.835 640.265 491 634.3 491C628.335 491 623.5 495.835 623.5 501.8C623.5 507.765 628.335 512.6 634.3 512.6Z" fill="white"/>
-              </svg>              
+              </svg>
           </div>
           <!-- <div class="container text-center" >
             <h1 class="p-3">International Conference on Language Technologies</h1>
@@ -244,19 +245,18 @@
         </header>
       </div>
     </section> <!-- end of header -->
-    
 
     <!-- ========== about the conference ======== -->
 
     <section id="Conference" class="container sec-margin ">
         <div class="row align-items-center">
-          <div class="col-lg-6 ">
+          <div class="col-lg-6 " data-aos="fade-right">
             <h1 class="bold-heading">ICCILT 2023</h1>
             <h4>International Conference on Open source Computational Intelligence and Language
               Technology</h4>
             <p class="m-0 ">2 Feb 2023 - 6 Feb 2023</p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-left">
             <p class="line-space">
               The International Conference on Open source Computational Intelligence and Language
               Technology is to bring together students, researchers, engineers and practitioners interested on difference aspects of Language
@@ -295,10 +295,10 @@
     <section id="About" class="container index-sec-margin">
       <div class="row align-items-center">
         <div class="row align-items-center">
-          <h3 class="col-lg-3">About us</h3>
+          <h3 class="col-lg-3" data-aos="fade-down">About us</h3>
           <hr class="col-lg-9">
         </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" data-aos="fade-right">
           <p class="line-space mt-md-3 mt-sm-3 mt-xs-3">ICFOSS is the outcome of a decade of work by Free Software enthusiasts, advocates, developers and supporters in the state of Kerala and outside.
              Recognizing the strides made by the FOSS community in Kerala, the Government of Kerala implimented the International Centre for Free and Open Source Software (ICFOSS) in 2009.
           </p>
@@ -307,7 +307,7 @@
               <!-- Activities of ICFOSS presently includes R & D;Support to FOSS software development; FOSS Pilot Programs; technology assistance to Government programs and institutions; Local Language computing; Student FOSS activities; Internet Governance; Studies on FOSS; Exploring FOSS Certification; and Capacity Building of students to enter the FOSS Community. -->
           </p>
           <p>Want to know more about us ? &nbsp;visit us....</p>
-        </div><div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        </div><div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" data-aos="fade-left>
           <div class="video-container p-3">
           <iframe src="https://www.youtube.com/embed/myQ-BfJ0rkk" title="ICFOSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -322,40 +322,42 @@
     <section id="Speakers" class="container index-sec-margin">
       <div class="row">
         <!-- speaker card -->
-        <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up"  >
           <div class=" pt-5">
-            <div class="card speaker-card">
-              <img src="{% static 'assets/steve.jpg'%}"  class="card-img-top" alt="...">
+            <div class="speaker-card d-flex flex-column align-items-center justify-content-center text-center">
+              <img src="{% static 'assets/bahalul.jpg'%}"  class="speaker-img mb-2" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Speaker Name</h5>
-                <h6 class="card-subtitle mb-2 ">Designation</h6>
-                <h6 class="card-subtitle mb-2 ">Organization Name</h6>
+                <h5 class="" >AKM Bahalul Haque</h5>
+                <h6 class="speaker-sub-heading mb-1 ">Lecturer & Junior Researcher</h6>
+                <h6 class="speaker-sub-heading mb-1 ">LUT University, Finland</h6>
               </div>
             </div>
           </div>
         </div><!--end of speaker card-->
         <!-- speaker card -->
-        <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
           <div class=" pt-5">
-            <div class="card speaker-card">
-              <img src="{% static 'assets/steve.jpg'%}"  class="card-img-top" alt="...">
+            <div class="speaker-card  d-flex flex-column align-items-center justify-content-center text-center">
+              <img src="{% static 'assets/muthumanickavel.jpeg'%}"  class="speaker-img mb-2" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Speaker Name</h5>
-                <h6 class="card-subtitle mb-2 ">Designation</h6>
-                <h6 class="card-subtitle mb-2 ">Organization Name</h6>
+                <h5 class="">Muthumanickavel Swaminathan</h5>
+                <h6 class="speaker-sub-heading mb-1 ">Lead Data Scientist</h6>
+                <h6 class="speaker-sub-heading mb-1 "> Cognizant, United Kingdom</h6>
               </div>
             </div>
           </div>
         </div><!--end of speaker card-->
         <!-- speaker card -->
-        <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
           <div class=" pt-5">
-            <div class="card speaker-card">
-              <img src="{% static 'assets/steve.jpg'%}"  class="card-img-top" alt="...">
+            <div class="speaker-card  d-flex flex-column align-items-center justify-content-center text-center">
+              <div>
+                <img src="{% static 'assets/syed.jpg'%}"  class="speaker-img mb-2" alt="...">
+              </div>
               <div class="card-body">
-                <h5 class="card-title">Speaker Name</h5>
-                <h6 class="card-subtitle mb-2 ">Designation</h6>
-                <h6 class="card-subtitle mb-2 ">Organization Name</h6>
+                <h5 class="">Dr. Syed Ibrahim S P</h5>
+                <h6 class="speaker-sub-heading mb-1 ">Professor</h6>
+                <h6 class="speaker-sub-heading mb-1 ">VIT, Chennai</h6>
               </div>
             </div>
           </div>
@@ -700,7 +702,7 @@
 
     <!-- ========== Help ========== -->
 
-    <section id="Help" class="index-sec-margin">
+    <section id="Help" class="index-sec-margin mb-5">
             <div class="container">
               <div class="text-center mb-lg-3">
                 <hr>
@@ -838,7 +840,7 @@
     
     {% endblock %}
     <!--========== Footer ========== -->
-    <footer class="index-sec-margin">
+    <footer   >
       <!-- Section: Links  -->
       <section class="footer-bg-color p-2">
         <div class="container text-md-start mt-5">
@@ -882,13 +884,13 @@
        Designed and developed by e-Governance R&D Lab <strong><a href="https://icfoss.in/" target="_blank" class="footer-link">ICFOSS</a></strong>
      </div>
    </footer>
-  
    <!-- Footer end -->
   <!-- /* java Script */ -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-
+AOS.init();
 let navbar = document.getElementById("navbar");
 
 //navbar hide on scroll

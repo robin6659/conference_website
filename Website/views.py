@@ -16,22 +16,15 @@ def acceptedpub(request):
   return render(request,"Website/acceptedPublications.html")
 def committee(request):
   return render(request,"Website/committee.html")
-# def update(request):
-#   return render(request,"Website/updatePage.html")
+def update(request):
+  return render(request,"Website/updatePage.html")
 
 def faq(request):
   if request.method == "POST":
     form = ContactForm(request.POST)
     print(form)
     if form.is_valid():
-      print(request.POST)
-
-      # name = request.POST['name']
-      # contact_number = request.POST['contact_number']
       email = request.POST['email']
-      # message = request.POST['message']
-      # post = Queries(name=name, contact_number=contact_number, email=email, message=message )
-
       form.save()
       send_mail(
                        'ICFOSS Conference Update',

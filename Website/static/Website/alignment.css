@@ -40,7 +40,11 @@ body{
     font-weight: 300 !important;
 }
 /* navigation dropdown hover effect */
-
+@media screen and (max-width:768){
+    .hero-img{
+        display:none;
+    }
+}
 
 @media (min-width: 576px) {
     .dropdown:hover > .dropdown-menu {

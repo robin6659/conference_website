@@ -80,7 +80,7 @@ body{
     justify-content: center;
 }
 .header-container-white{
-    height: calc(100vh - 60px);
+    height: calc(100vh - 70px);
     background-color: #fff;
     display: flex;
     flex-direction: column;

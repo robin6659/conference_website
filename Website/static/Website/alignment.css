@@ -13,10 +13,11 @@ body{
 /* navbar */
 .nav-background{
     background-color: #fff !important;
+    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.15) !important;
 
 }
 .nav-link{
-    color: #fff !important;
+    color: #3a3b3c !important;
     margin-left: 10px !important;
     font-weight: 500 !important;
 }
@@ -134,7 +135,7 @@ body{
 /* Primary button */
 
 .primary-button{
-    color: #fff;
+    color: #fff !important;
     background-color:  #FD7E14  !important;
     border: 2px solid #FD7E14;
     border-radius: 4px !important;

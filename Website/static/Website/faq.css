@@ -1,6 +1,5 @@
-
-.accordion-button:not(.collapsed){
-  background: #FD7E14;
+.accordion-button:not(.collapsed) {
+  background: #fd7e14;
   color: #ffffff;
 }
 .accordion-button:focus {
@@ -33,12 +32,11 @@
 }
 
 /* text area expand */
-textarea{
+textarea {
   resize: none !important;
 }
 
-.iconstyle
-{
+.iconstyle {
   margin-right: 10px;
-  color: #FD7E14;
+  color: #fd7e14;
 }

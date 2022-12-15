@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'conference.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'conference',
+        'NAME': 'conference_db',
         'USER': 'postgres',
         'PASSWORD':'password',
         'HOST': 'localhost',

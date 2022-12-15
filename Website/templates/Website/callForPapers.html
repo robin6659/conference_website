@@ -28,7 +28,7 @@
             <div>
                 <p class="line-space">The Committee of the International Conference on <strong>FOSS Aprroaches towards Computational Intelligence and Language Technology(FOSS-CILT23)</strong>
                      would like to invite members of the community to submit papers and posters.
-                      FOSS-CILT23 seeks to promote and stimulate discussion on the latest innovations and developments in all fields of NLP, Language Technology and E-Governance.
+                      FOSS-CIL T23 seeks to promote and stimulate discussion on the latest innovations and developments in all fields of NLP, Language Technology and E-Governance.
                 </p>
             </div>
             <div>
@@ -38,17 +38,9 @@
             </div>
         </div>
         <div>
-            <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F" role="button" class="btn primary-button btn-lg mb-lg-0 mb-sm-2">Submit paper</a>
-            <a href="{% static 'assets/template.doc'%}" download><button type="button" class="btn primary-button-outlined-black btn-lg ms-lg-2 ms-md-2 ms-sm-0 ">Download Template</button></a>
+            <a href="{% url 'Website:update' %}" role="button" class="btn primary-button btn-lg mb-lg-0 mb-sm-2">Submit paper</a>
+            <a href="{% static 'assets/template.doc'%}"  role="button" class="btn primary-button-outlined-black btn-lg ms-lg-2 ms-md-2 ms-sm-0 " download>Download Template</a>
         </div>
-        <!-- <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <a href="{% url 'Website:reg' %}"><button type="button" class="btn primary-button btn-lg ">Submit paper</button></a>
-            </div>
-            <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
-                <a href="{% static 'assets/template.doc'%}" download><button type="button" class="btn primary-button-outlined-black btn-lg ">Download Template</button></a>
-            </div>
-        </div> -->
 
         <!-- important dates -->
 
@@ -56,8 +48,6 @@
             <div>
                 <h4 class="mb-lg-3">Important Dates</h4>
                 <table class="table">
-                    <thead class="table-dark">
-                    </thead>
                     <tbody>
                         <tr>
                             <td scope="col">Paper Submission Deadline</td>
@@ -84,7 +74,7 @@
         <section class="div-margin mt-lg-5">
             <h4>Paper Submission Guidlines</h4>
             <p class="line-space">All papers must be original and not simultaneously submitted to another journal or conference. All papers submitted to FOSS-CILT23 will be checked for plagiarism including self-plagiarism. If a paper is found to fall in the category of plagiarism, the paper will be automatically rejected.
-                The following paper categories are welcome: 
+                The following paper categories are welcome:
             </p>
             <ul class="line-space">
                 <li>The Paper Should be written in English. </li>
@@ -93,16 +83,16 @@
                 <li>The paper must conform to the standard of Templates for Conference Proceedings.</li>
                 <li>Non-presented papers will be pulled from submission. </li>
                 <li>All review processes are single-blind peer-reviews. </li>
-                <li>The full paper must be submitted in PDF format through Online Submission System via the link:</li>
+                <li>The full paper must be submitted in PDF format through Online Submission System.</li>
             </ul>
         </section>
         <!-- available tracks -->
 
         <div class="row sec-margin">
-            <div class="div-margin col-lg-6 col-md-12 col-sm-12 text-center">
+            <div class="div-margin col-lg-6 col-md-12 col-sm-12">
                 <p>Track 1</p>
                 <h4>Language Technology</h4>
-                <ul type="none">
+                <ul>
                     <li>Machine Translation</li>
                     <li>Semantic Processing </li>
                     <li>Lexical Semantics </li>
@@ -116,10 +106,10 @@
                     <li>Parsing/Grammatical Formalisms </li>
                 </ul>
             </div>
-            <div class="div-margin col-lg-6 col-md-12 col-sm-12 text-center">
+            <div class="div-margin col-lg-6 col-md-12 col-sm-12">
                 <p>Track 2</p>
                 <h4>Text Analysis</h4>
-                <ul type="none">
+                <ul>
                     <li>Question Answering </li>
                     <li>Dialog Systems </li>
                     <li>Text summarization</li>
@@ -130,10 +120,10 @@
                     <li>Text mining</li>
                 </ul>
             </div>
-            <div class="div-margin col-lg-6 col-md-12 col-sm-12 text-center">
+            <div class="div-margin col-lg-6 col-md-12 col-sm-12">
                 <p>Track 3</p>
                 <h4>Infomration Retrieval and Image Processing</h4>
-                <ul type="none">
+                <ul>
                     <li>Hand-written Recognition</li>
                     <li>Computer vision</li>
                     <li>Medical Image Processing</li>
@@ -142,23 +132,24 @@
                     <li>Hand Gesture Recognition</li>
                 </ul>
             </div>
-            <div class="div-margin col-lg-6 col-md-12 col-sm-12 text-center">
+            <div class="div-margin col-lg-6 col-md-12 col-sm-12">
                 <p>Track 4</p>
                 <h4>Speech Analysis</h4>
-                <ul type="none">
+                <ul>
                     <li>Spoken Language Processing </li>
                     <li>Speech Recognition and Synthesis</li>
                     <li>Speech Enhancement</li>
                     <li>Spoken Document Retrieval</li>
                 </ul>
             </div>
-            <div class="div-margin col-lg-6 col-md-12 col-sm-12 text-center">
+            <div class="div-margin col-lg-6 col-md-12 col-sm-12">
                 <p>Track 5</p>
-                <h4>E-Governance and Localization</h4>
-                <ul type="none">
-                    <li></li>
+                <h4>e-Governance and Localization</h4>
+                <ul>
+                    <li>e-Commerce</li>
+                    <li>e-Services</li>
+                    <li>e-Democracy</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem modi, non sed nesciunt reprehenderit dicta dolore quis illum nihil molestias beatae error aut dolorem repellendus, pariatur perspiciatis esse, commodi expedita.</p>
             </div>
 
         </div>

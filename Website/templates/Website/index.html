@@ -91,8 +91,8 @@
                           About
                       </a>
                       <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="{% url 'Website:index' %}#Conference"">About Conference</a></li>
-                          <li><a class="dropdown-item" href="{% url 'Website:index' %}#About"">ICFOSS</a></li>
+                          <!-- <li><a class="dropdown-item" href="{% url 'Website:index' %}#Conference"">About Conference</a></li>
+                          <li><a class="dropdown-item" href="{% url 'Website:index' %}#About"">ICFOSS</a></li> -->
                           <li><a class="dropdown-item" href="{% url 'Website:index' %}#Speakers">Speakers</a></li>
                           <li><a class="dropdown-item" href="{% url 'Website:committee' %}"">Committee</a></li>
                           <!-- <li><a class="dropdown-item" href="{% url 'Website:index' %}#Schedule">Schedule</a></li> -->
@@ -148,8 +148,8 @@
             </p>
             <!-- <p class="mt-2"><i class="fa fa-solid fa-location-dot"></i>&nbsp;ICFOSS,Trivandrum</p> -->
             <div class="mt-lg-4" data-aos="fade-up">
-              <a href="{% url 'Website:reg' %}"><button type="button" class="btn primary-button-outlined btn-lg ">Register Now</button></a>
-              <a href="{% url 'Website:reg' %}"><button type="button" class="btn primary-button btn-lg ms-2">Submit paper</button></a>
+              <a href="{% url 'Website:update' %}"><button type="button" class="btn primary-button-outlined btn-lg ">Register Now</button></a>
+              <a href="{% url 'Website:update' %}"><button type="button" class="btn primary-button btn-lg ms-2">Submit paper</button></a>
             </div>
           </div>
           <div class="hero-img col-lg-5 d-flex align-items-end" data-aos="fade-left">
@@ -682,7 +682,6 @@
                         <input type="text" class="form-control" placeholder="full name" id="name" name="name"
                           aria-describedby="emailHelp" required>
                       </div>
-                      
                       <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" placeholder="email@address" name="email" id="email"

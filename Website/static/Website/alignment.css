@@ -240,6 +240,7 @@ iframe{
     text-decoration:none !important;
 }
 .about-us-link:hover{
+    color: #000 !important;
     text-decoration: underline !important;
 }
 

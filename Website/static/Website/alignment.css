@@ -40,9 +40,12 @@ body{
     font-weight: 300 !important;
 }
 /* navigation dropdown hover effect */
-@media screen and (max-width:768){
+@media screen and (max-width:768px){
     .hero-img{
-        display:none;
+        display:none !important;
+    }
+    body{
+        overflow-x: auto;
     }
 }
 
@@ -53,7 +56,7 @@ body{
       /* box-shadow: rgb(55, 146, 221); */
     }
 }
-@media (max-width: 480px){
+@media (max-width: 768px){
     .navbar-nav{
         background: #000;
         border-bottom:1px solid #000;
@@ -204,7 +207,8 @@ iframe{
 
 /* .section-bg-color{
     /* background: #0a0a0a09; */
-/* } */ */
+/* } */
+
 /* style="background-color: rgba(0, 0, 0, 0.025);" */
 
 .btn-outline-light:hover{
@@ -295,7 +299,14 @@ iframe{
 .sub-heading-sm-white{
     color: #fff !important;
 }
-
+@media (max-width:768px) {
+    .bold-heading-white{
+        font-size: 30px !important;
+    }
+    .bold-sm-heading-white{
+        font-size: 18px !important;
+    }
+}
 /* scroll_bar_animation_start */
 ::-webkit-scrollbar {
   width: 5px;

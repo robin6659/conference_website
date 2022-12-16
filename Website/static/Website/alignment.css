@@ -33,17 +33,25 @@ body{
     background-color: #f06d02 !important;
 }
 /* .nav-item:hover{
-    /* font-weight: 500 !important; 
+    /* font-weight: 500 !important;
     color: #FD7E14 !important;
 } */
 .upadte-content{
     font-size: 18px !important;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
+}
+.update-content-img{
+    height: 400px;
+    width: 400px;
 }
 /* navigation dropdown hover effect */
 @media screen and (max-width:768px){
     .hero-img{
         display:none !important;
+    }
+    .update-content-img{
+        height: 260px;
+        width: 260px;
     }
     body{
         overflow-x: auto;
@@ -60,7 +68,8 @@ body{
 @media (max-width: 768px){
     .navbar-nav{
         background: #000;
-        border-bottom:1px solid #000;
+        padding: 10px !important;
+        /* border-bottom:1px solid #000; */
     }
     .nav-link{
         color: #fff !important;
@@ -75,25 +84,29 @@ body{
     .navbar-toggler{
         border: none !important;
     }
+    .index-sec-margin{
+        margin-top: 60px !important;
+    }
+    .sec-margin{
+        margin-top: 40px !important;
+    }
 }
 
 /* header section */
 
 .header-container{
     height: calc(100vh - 60px);
-    background-color: #3a3b3c;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.header-color{
+    background-color: #3a3b3c;
+}
 .header-container-white{
     height: calc(100vh - 70px);
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /* section margin for index page */
@@ -237,17 +250,17 @@ iframe{
 
 .about-us-link{
     color: #000 !important;
-    text-decoration:none !important;
+    text-decoration:underline !important;
 }
-.about-us-link:hover{
+/* .about-us-link:hover{
     color: #000 !important;
     text-decoration: underline !important;
-}
+} */
 
 /* footer link */
 .footer-link{
-    color: #fff;
-    text-decoration: none;
+    color: #fff !important;
+    text-decoration: none !important;
 }
 .footer-link:hover{
     color: #FD7E14 !important;
@@ -263,15 +276,30 @@ iframe{
     -o-border-radius: 50%;
 } */
 .member{
-    transition: transform .2s;
     height: 180px;
     width: 180px;
     border-radius: 50%;
+}
+.member:hover{
+    border:  4px solid #fff !important;
 }
 @media (max-width:1000px) {
     .member{
         height: 150px;
         width: 150px;
+    }
+    .update-content-img{
+        height: 240px !important;
+        width: 240px !important;
+    }
+    .hero-img{
+        display:none !important;
+    }
+    .bold-heading-white{
+        font-size: 30px !important;
+    }
+    .bold-sm-heading-white{
+        font-size: 18px !important;
     }
 }
 /* ========== Committe ========== */

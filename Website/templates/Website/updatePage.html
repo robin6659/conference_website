@@ -18,13 +18,11 @@
 </head>
 <body>
     {% block content %}
-
-     <body>
-
-       <section class="header-container-white">
-        <div class="container text-center" >
-          <div data-aos="zoom-in">
-            <svg width="400" height="400" viewBox="0 0 667 667" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="header-container-white  d-flex flex-column align-items-center justify-content-center">
+        <header>
+        <div class="container text-center" data-aos="zoom-in">
+          <div>
+            <svg  class="update-content-img" viewBox="0 0 667 667" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.410004">
               <path d="M638.944 397.97C639.515 388.143 639.259 378.27 638.151 368.494C632.947 322.561 609.381 279.247 574.697 248.686C562.324 237.782 548.245 228.015 540.193 213.623C526.631 189.386 527.657 161.53 510.827 137.599C493.976 113.641 469.42 94.9567 441.728 85.3607C359.16 56.7514 243.561 103.334 253.971 202.815C254.007 203.173 254.048 203.691 254.092 204.349C255.475 225.013 239.257 242.386 218.615 242.877C142.435 244.685 76.86 303.418 62.8293 377.818C53.8053 425.665 68.5813 478.109 103.581 511.957C129.707 537.223 164.761 551.105 199.832 560.642C270.151 579.766 344.148 583.775 416.652 576.462C484.521 569.617 556.111 550.106 600.004 497.89C623.417 470.037 636.832 434.317 638.944 397.97Z" fill="#F6DCB5"/>
               </g>
@@ -208,9 +206,10 @@
               <path d="M129.61 403.138C128.874 403.138 128.277 402.542 128.277 401.805V369.086C128.277 364.018 132.399 359.895 137.466 359.895H176.086C176.822 359.895 177.419 360.493 177.419 361.229C177.419 361.966 176.822 362.562 176.086 362.562H137.466C133.87 362.562 130.943 365.489 130.943 369.086V401.805C130.943 402.542 130.346 403.138 129.61 403.138Z" fill="white"/>
               </svg>
           </div>
-          <p class="upadte-content" data-aos="zoom-in">The page will be updated soon...</p>
-         </div>
-        </section>
+          <p class="upadte-content">The page will be updated soon...</p>
+        </div>
+      </header>
+      </section>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
          AOS.init();

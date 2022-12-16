@@ -18,7 +18,7 @@ body{
 }
 .nav-link{
     color: #3a3b3c !important;
-    margin-left: 10px !important;
+    /* margin-left: 10px !important; */
     font-weight: 500 !important;
 }
 .nav-link:hover{
@@ -57,7 +57,16 @@ body{
         overflow-x: auto;
     }
 }
-
+@media screen and (max-width:420px){
+    .xs-margin-top-outlined{
+        margin-top: 20px !important;
+    }
+}
+@media screen and (max-width:576px){
+    .xs-margin-top{
+        margin-top: 20px !important;
+    }
+}
 @media (min-width: 576px) {
     .dropdown:hover > .dropdown-menu {
       display: block;
@@ -307,6 +316,10 @@ iframe{
     font-size: 18px;
     font-weight: 600 !important;
 }
+.track-data{
+    font-size: 16px;
+    font-weight: 500 !important;
+}
 .member-position{
     font-size: 14px;
     font-weight: 400 !important;
@@ -353,8 +366,13 @@ iframe{
 }
 /* scroll_bar_animation_end */
 
-/* 404_not_found_start */
-
-
-
-/* 404_not_found_end */
+/* Call for papers card E1E2FE, */ 
+.track-card{
+    background: #F6DCB5;
+    box-shadow: 0 2px 15px -5px rgba(0, 0, 0, 0.15);
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+}

@@ -24,138 +24,303 @@
         <div>
             <!-- call for papers  -->
 
-            <h1>Call For Papers</h1>
+            <h1 class="mb-lg-3">Call For Papers</h1>
             <div>
-                <p class="line-space">The Committee of the International Conference on <strong>FOSS Aprroaches towards Computational Intelligence and Language Technology(FOSS-CILT23)</strong>
+                <p class="line-space mb-0">The Committee of the International Conference on <strong>FOSS Approaches towards Computational Intelligence and Language Technology(FOSS-CILT23)</strong>
                      would like to invite members of the community to submit papers and posters.
                       FOSS-CIL T23 seeks to promote and stimulate discussion on the latest innovations and developments in all fields of NLP, Language Technology and E-Governance.
                 </p>
-            </div>
-            <div>
-                <!-- <h5>Publication:</h5> -->
-                <p class="line-space">Honorable authors are cordially invited to contribute their research papers and posters. All papers submitted to the conference will be subjected to the rigorous peer-review process. All accepted papers will be pubished into Open source, peer-reviewed journal,
-                     <strong>Research Cell:  An International Journal of Engineering Sciences (ISSN: 2229-6913)(Print) ,(ISSN: 2320-0332)(Online).</strong> </p>
+                <p class="line-space">Honorable authors are cordially invited to contribute their research papers and posters. All papers submitted to the conference will be subjected to a rigorous peer-review process. All accepted papers will be published in <strong>Open Access</strong>,a peer-reviewed journal, <strong>Research Cell:  An International Journal of Engineering Sciences (ISSN: 2229-6913)(Print),(ISSN: 2320-0332)(Online).</strong>
+                </p>
+   
             </div>
         </div>
-        <div>
-            <a href="{% url 'Website:update' %}" role="button" class="btn primary-button btn-lg  mb-lg-0 mb-md-0 mb-sm-2 mb-xs-4">Submit paper</a>
-            <a href="{% static 'assets/template.doc'%}"  role="button" class="btn primary-button-outlined-black btn-lg ms-lg-2 ms-md-2 ms-sm-2" download>Download Template</a>
+        <div class="mt-lg-4">
+            <a href="{% url 'Website:update' %}" role="button" class="btn primary-button btn-lg ">Submit paper</a>
+            <a href="{% static 'assets/template.doc'%}"  role="button" class="btn primary-button-outlined-black btn-lg ms-lg-2 ms-md-2 ms-sm-0 xs-margin-top-outlined" download>Download Template</a>
         </div>
 
         <!-- important dates -->
 
-        <section class="sec-margin ">
+        <section class="sec-margin " data-aos="fade-up">
             <div>
                 <h4 class="mb-lg-3">Important Dates</h4>
-                <table class="table">
+                <table class="table table-striped table-bordered">
                     <tbody>
-                        <tr>
-                            <td scope="col">Paper Submission Deadline</td>
+                        <tr >
+                            <th scope="col">Paper Submission Deadline</th>
                             <td scope="col">16 January  2023</td>
                         </tr>
                         <tr>
-                            <td scope="row">Paper Acceptance</td>
+                            <th scope="row">Paper Acceptance</th>
                             <td>6 February 2023</td>
 
                         </tr>
                         <tr>
-                            <td scope="row">Deadline for Registration & Camera Ready</td>
+                            <th scope="row">Deadline for Registration & Camera Ready</th>
                             <td>15 February 2023</td>
 
                         </tr>
                         <tr>
-                            <td scope="row">Conference Dates</td>
+                            <th scope="row">Conference Dates</th>
                             <td colspan="4">22-23 February 2023</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
-        <section class="div-margin mt-lg-5">
-            <h4>Paper Submission Guidlines</h4>
-            <p class="line-space">All papers must be original and not simultaneously submitted to another journal or conference. All papers submitted to FOSS-CILT23 will be checked for plagiarism including self-plagiarism. If a paper is found to fall in the category of plagiarism, the paper will be automatically rejected.
+        <section class="div-margin mt-lg-5" data-aos="fade-up">
+            <h4>Paper Submission Guidelines</h4>
+            <p class="line-space mb-lg-3" style="color:#605e5e">All papers must be original and not simultaneously submitted to another journal or conference. All papers submitted to FOSS-CILT23 will be checked for plagiarism including self-plagiarism. If a paper is found to fall in the category of plagiarism, the paper will be automatically rejected.
                 The following paper categories are welcome:
             </p>
-            <ul class="line-space">
-                <li>The Paper Should be written in English. </li>
-                <li>View the theme and scope topics. </li>
-                <li>The length of a <strong>submitted paper should be between 6 - 8 pages.</strong></li>
-                <li>The paper must conform to the standard of Templates for Conference Proceedings.</li>
-                <li>Non-presented papers will be pulled from submission. </li>
-                <li>All review processes are single-blind peer-reviews. </li>
-                <li>The full paper must be submitted in PDF format through Online Submission System.</li>
+            <ul class="line-space p-0 m-0" type="none">
+                <li class="d-flex align-items-center m-2">
+                    <ion-icon name="information-circle-outline" class="me-2" style="width: 28px; height: 28px; color: #fd7e14;"></ion-icon>
+                    <span> Paper should be written in English.</span>
+                </li>
+                <li class="d-flex align-items-center m-2">
+                    <ion-icon name="information-circle-outline" class="me-2" style="width: 28px; height: 28px; color: #fd7e14;"></ion-icon>
+                    <span>View the theme and scope topics.</span>
+                </li>
+                <li class="d-flex align-items-center m-2">
+                    <ion-icon name="information-circle-outline" class="me-2" style="width: 28px; height: 28px; color: #fd7e14;"></ion-icon>
+                    <span>Length of a <strong>submitted paper should be between 6 - 8 pages.</strong></span>
+                </li>
+                <li class="d-flex align-items-center m-2">
+                    <ion-icon name="information-circle-outline" class="me-2" style="width: 28px; height: 28px; color: #fd7e14;"></ion-icon>
+                    <span>Paper must conform to the standard of templates for conference proceedings.</span>
+                </li>
+                <li class="d-flex align-items-center m-2">
+                    <ion-icon name="information-circle-outline" class="me-2" style="width: 28px; height: 28px; color: #fd7e14;"></ion-icon>
+                    <span>Non-presented papers will be pulled from submission.</span>
+                </li>
+                <li class="d-flex align-items-center m-2">
+                    <ion-icon name="information-circle-outline" class="me-2" style="width: 28px; height: 28px; color: #fd7e14;"></ion-icon>
+                    <span>All review processes are single-blind peer reviews.</span>
+                </li>
+                <li class="d-flex align-items-center m-2">
+                    <ion-icon name="information-circle-outline" class="me-2" style="width: 28px; height: 28px; color: #fd7e14;"></ion-icon>
+                    <span>Full paper must be submitted in PDF format through Online Submission System.</span>
+                </li>
             </ul>
         </section>
         <!-- available tracks -->
 
-        <div class="row sec-margin">
-            <div class="div-margin col-lg-6 col-md-12 col-sm-12">
-                <p>Track 1</p>
-                <h4>Language Technology</h4>
-                <ul>
-                    <li>Machine Translation</li>
-                    <li>Semantic Processing </li>
-                    <li>Lexical Semantics </li>
-                    <li>Ontology </li>
-                    <li>Linguistic Resources </li>
-                    <li>Statistical and Knowledge based methods </li>
-                    <li>POS tagging </li>
-                    <li>Discourse,Phonology, Morphology </li>
-                    <li>Paraphrasing/Entailment/Generation</li>
-                    <li>Chunking/Shallow Parsing</li>
-                    <li>Parsing/Grammatical Formalisms </li>
-                </ul>
+        <div class="row gx-5 my-4">
+            <div class="col-lg-6">
+                <div class="div-margin row">
+                    <div class="track-card p-4" data-aos="fade-up">
+                        <h4>Language Technology</h4>
+                        <p style="color: rgb(75, 71, 71);">Track 1</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Machine Translation</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Semantic Processing</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Linguistic Resources</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Chunking/Shallow Parsing</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-start justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="min-width: 24px; min-height: 24px;" class="mt-1">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Parsing/Grammatical Formalisms</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Lexical Semantics</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Ontology</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">POS tagging</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-start justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="min-width: 24px; min-height: 24px;" class="mt-1">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Paraphrasing / Entailment / Generation</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-start justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="min-width: 24px; min-height: 24px;" class="mt-1">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Discourse, Phonology, Morphology</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-margin row">
+                    <div class="track-card p-4" data-aos="fade-up">
+                        <h4 class="">Text Analysis</h4>
+                        <p style="color: rgb(75, 71, 71);">Track 2</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Question Answering </span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Dialog Systems</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Text summarization</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-start justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="min-width: 24px; min-height: 24px;" class="mt-1">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Natural Language Generation</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Sentimental Analysis</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Social Media Analytics</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Text mining</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-start justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="min-width: 24px; min-height: 24px;" class="mt-1">
+                                    </ion-icon>
+                                    <span class="track-data m-1">NLP-based Recommendation systems</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="div-margin col-lg-6 col-md-12 col-sm-12">
-                <p>Track 2</p>
-                <h4>Text Analysis</h4>
-                <ul>
-                    <li>Question Answering </li>
-                    <li>Dialog Systems </li>
-                    <li>Text summarization</li>
-                    <li>Natural Language Generation</li>
-                    <li>NLP-based Recommendation systems</li>
-                    <li>Sentimental Analysis</li>
-                    <li>Social Media Analytics</li>
-                    <li>Text mining</li>
-                </ul>
+            <div class="col-lg-6">
+                <div class="div-margin row">
+                    <div class="track-card p-4" data-aos="fade-up">
+                        <h4 class="">Information Retrieval and Image Processing</h4>
+                        <p style="color: rgb(75, 71, 71);">Track 3</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Hand-written Recognition </span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Computer vision</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Medical Image Processing</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Object Detection</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-center justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Hand Gesture Recognition</span>
+                                </p>
+                                <p class="m-0 d-flex align-items-start justify-content-start">
+                                    <ion-icon name="chevron-forward-circle-outline" style="min-width: 24px; min-height: 24px;" class="mt-1">
+                                    </ion-icon>
+                                    <span class="track-data m-1">Image Segmentation and Classification</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-margin row">
+                    <div class="track-card p-4" data-aos="fade-up">
+                        <h4 class="">Speech Analysis</h4>
+                        <p style="color: rgb(75, 71, 71);">Track 4</p>
+                        <div>
+                            <p class="m-0 d-flex align-items-center justify-content-start">
+                                <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                </ion-icon>
+                                <span class="track-data m-1">Spoken Language Processing</span>
+                            </p>
+                            <p class="m-0 d-flex align-items-center justify-content-start">
+                                <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                </ion-icon>
+                                <span class="track-data m-1">Speech Recognition and Synthesis</span>
+                            </p>
+                            <p class="m-0 d-flex align-items-center justify-content-start">
+                                <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                </ion-icon>
+                                <span class="track-data m-1">Speech Enhancement</span>
+                            </p>
+                            <p class="m-0 d-flex align-items-center justify-content-start">
+                                <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                </ion-icon>
+                                <span class="track-data m-1">Spoken Document Retrieval</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-margin row">
+                    <div class="track-card p-4" data-aos="fade-up">
+                        <h4 class="">e-Governance and Localization</h4>
+                        <p style="color: rgb(75, 71, 71);">Track 5</p>
+                        <div>
+                            <p class="m-0 d-flex align-items-center justify-content-start">
+                                <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                </ion-icon>
+                                <span class="track-data m-1">e-Commerce </span>
+                            </p>
+                            <p class="m-0 d-flex align-items-center justify-content-start">
+                                <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                </ion-icon>
+                                <span class="track-data m-1">e-Services </span>
+                            </p>
+                            <p class="m-0 d-flex align-items-center justify-content-start">
+                                <ion-icon name="chevron-forward-circle-outline" style="width: 24px; height: 24px;">
+                                </ion-icon>
+                                <span class="track-data m-1">e-Democracy </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="div-margin col-lg-6 col-md-12 col-sm-12">
-                <p>Track 3</p>
-                <h4>Infomration Retrieval and Image Processing</h4>
-                <ul>
-                    <li>Hand-written Recognition</li>
-                    <li>Computer vision</li>
-                    <li>Medical Image Processing</li>
-                    <li>Image Segmentation and Classification</li>
-                    <li>Object Detection</li>
-                    <li>Hand Gesture Recognition</li>
-                </ul>
-            </div>
-            <div class="div-margin col-lg-6 col-md-12 col-sm-12">
-                <p>Track 4</p>
-                <h4>Speech Analysis</h4>
-                <ul>
-                    <li>Spoken Language Processing </li>
-                    <li>Speech Recognition and Synthesis</li>
-                    <li>Speech Enhancement</li>
-                    <li>Spoken Document Retrieval</li>
-                </ul>
-            </div>
-            <div class="div-margin col-lg-6 col-md-12 col-sm-12">
-                <p>Track 5</p>
-                <h4>e-Governance and Localization</h4>
-                <ul>
-                    <li>e-Commerce</li>
-                    <li>e-Services</li>
-                    <li>e-Democray</li>
-                </ul>
-            </div>
-
         </div>
     </section><!--end of call for papers description-->
-     <!-- Footer start -->
-     <!-- Footer end -->
 </body>
 </html>
 {% endblock %}

@@ -5,9 +5,9 @@
 .accordion-button:focus {
   box-shadow: none;
 }
-.form-area {
+/* .form-area {
   padding-top: 7%;
-}
+} */
 .single-form {
   background: #fff;
   box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.15);
@@ -17,7 +17,7 @@
   -ms-border-radius: 30px !important;
   -o-border-radius: 30px !important;
 }
-.left {
+/* .left {
   background: rgb(153, 83, 66);
   padding: 200px 230px;
 }
@@ -29,14 +29,14 @@
 }
 .left h2 span {
   font-weight: 100;
-}
+} */
 
 /* text area expand */
 textarea {
   resize: none !important;
 }
 
-.iconstyle {
+/* .iconstyle {
   margin-right: 10px;
   color: #fd7e14;
-}
+} */

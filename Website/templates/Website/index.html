@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'assets/favicon.png'%}">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
@@ -50,10 +51,7 @@
       color: white;
       cursor: pointer;
       padding: 18px;
-      border-radius: 50px;
-    }
-
-    #myBtn:hover {
+      color: #fff;
       background: #f06d02 !important;
     }
   /* Top Arrow style */
@@ -132,24 +130,24 @@
     <!-- ========== header ========== -->
 
     <section class="header-container header-color">
-      <div class="container p-0 m-0" >
+      <div class="container" >
         <header class="row">
-          <div class="col-lg-7 " data-aos="fade-right">
+          <div class="col-lg-7 p-lg-1 p-md-2 p-sm-3 mt-md-2" data-aos="fade-right">
             <h1 class="bold-heading-white">
               <span class="bold-sm-heading-white">International Conference on </span><br>FOSS Approaches towards Computational Intelligence and Language
               Technology <br>(FOSS-CIL T23)
             </h1>
               <p class="mt-4 mb-2 sub-heading-sm-white d-flex align-items-center">
                 <ion-icon name="location-outline" class="me-2"></ion-icon>
-                ICFOSS , Thiruvanthapuram , India</p>
+                ICFOSS , Thiruvananthapuram , India</p>
             <p class="m-0 sub-heading-sm-white d-flex align-items-center">
               <ion-icon name="calendar-outline" class="me-2"></ion-icon>
               22,23 February , 2023
             </p>
             <!-- <p class="mt-2"><i class="fa fa-solid fa-location-dot"></i>&nbsp;ICFOSS,Trivandrum</p> -->
-            <div class="mt-lg-4 mt-md-4 mt-sm-4 xs-margin-top" data-aos="fade-up">
-              <a href="{% url 'Website:update' %}"><button type="button" class="btn primary-button-outlined btn-lg ">Register Now</button></a>
-              <a href="{% url 'Website:update' %}"><button type="button" class="btn primary-button btn-lg ms-2">Submit paper</button></a>
+            <div class="mt-lg-4 mt-md-4 mt-sm-4 xs-margin-top p-sm-1" data-aos="fade-up">
+              <a href="{% url 'Website:reg' %}" role="button" class="btn primary-button-outlined btn-lg button-width">Register Now</a>
+              <a href="{% url 'Website:update' %}" role="button" class="btn primary-button btn-lg ms-lg-2 ms-md-2 ms-sm-0 button-width xs-margin-top-outlined">Submit paper</a>
             </div>
           </div>
           <div class="hero-img col-lg-5 d-flex align-items-end" data-aos="fade-left">
@@ -229,7 +227,7 @@
             <p class="m-0 ">22 Feb 2023 - 23 Feb 2023</p>
           </div>
           <div class="col-lg-6  mt-md-3 mt-sm-3 xs-margin-top" data-aos="fade-left">
-            <p class="line-space">
+            <p class="line-space justify-content-center">
               The International Conference on FOSS Approaches towards Computational Intelligence and Language
               Technology is to bring together students, researchers, engineers and practitioners interested on difference aspects of Language
               Technologies. The Conference looks for significant contributions to all major fields of the Natural
@@ -384,6 +382,7 @@
                     <h5>dolor sit amet</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                   </div>
+
                 </div>
                 <div class="row mt-lg-2">
                   <div class="col-lg-4 mb-sm-1">10:00 AM</div>
@@ -636,7 +635,7 @@
                           </h3>
                           <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                             <div class="accordion-body">
-                              You can register (as author or participant) by given link (link)
+                              You can register (as author or participant) by given link : <a href="{% url 'Website:reg' %}">Registration Link</a>
                             </div>
                           </div>
                         </div><!-- # Faq item-->
@@ -649,7 +648,7 @@
                           </h3>
                           <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                             <div class="accordion-body">
-                              The guidelines and the other important informations are issued in the given link
+                              The guidelines and the other important informations are issued in the given link : <a href="{% url 'Website:callforpaper' %}">Paper Submission Guidelines</a>
                             </div>
                           </div>
                         </div><!-- # Faq item-->
@@ -716,8 +715,8 @@
              <p class="m-0">
                info@icfoss.in
              </p>
-             <p class="m-0">+91 471-2413012</p>
-             <p class="m-0">+91-9400225962</p>
+             <p class="m-0" style="color: #fff;">+91 471-2413012</p>
+             <p class="m-0" style="color: #fff;">+91-9400225962</p>
            </div>
            <!-- Grid column -->
          </div>
@@ -741,7 +740,8 @@
      </section>
      <!-- Copyright -->
      <div class="footer-bg-color footer-border text-center p-4">
-       Designed and developed by e-Governance R&D Lab <strong><a href="https://icfoss.in/" target="_blank" class="footer-link">ICFOSS</a></strong>
+       Designed and developed by e-Governance R&D Lab
+       <strong><a href="https://icfoss.in/" target="_blank" class="footer-link">ICFOSS</a></strong>
      </div>
    </footer>
    <!-- Footer end -->

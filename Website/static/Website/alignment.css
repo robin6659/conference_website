@@ -57,6 +57,7 @@ body{
         overflow-x: auto;
     }
 }
+
 @media screen and (max-width:420px){
     .xs-margin-top-outlined{
         margin-top: 20px !important;

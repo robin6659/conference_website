@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call for papers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -33,20 +34,22 @@
     <section class="container sec-margin">
         <div>
             <!-- call for papers  -->
-
             <h1 class="mb-lg-3">Call For Papers</h1>
-            <div>
-                <p class="line-space mb-0">The Committee of the International Conference on <strong>FOSS Approaches towards Computational Intelligence and Language Technology(FOSS-CIL T23)</strong>
-                     would like to invite members of the community to submit papers and posters.
-                      FOSS-CIL T23 seeks to promote and stimulate discussion on the latest innovations and developments in all fields of NLP, Language Technology and E-Governance.
-                </p>
-                <p class="line-space">Honorable authors are cordially invited to contribute their research papers and posters. All papers submitted to the conference will be subjected to a rigorous peer-review process. All accepted papers will be published in <strong>Open Access</strong>,a peer-reviewed journal, <strong>Research Cell:  An International Journal of Engineering Sciences (ISSN: 2229-6913)(Print),(ISSN: 2320-0332)(Online).</strong>
-                </p>
-            </div>
+            <p class="line-space mb-0">The Committee of the International Conference on <strong>FOSS Approaches towards Computational Intelligence and Language Technology(FOSS-CIL T23)</strong>
+                would like to invite members of the community to submit <a href="#paperGuidelines">papers</a> and <a href="#posterInstructions">posters</a>.
+                FOSS-CIL T23 seeks to promote and stimulate discussion on the latest innovations and developments in all fields of NLP, Language Technology and E-Governance.
+            </p>
+            <p class="line-space">Honorable authors are cordially invited to contribute their
+                 research papers and posters. All papers submitted to the conference will be
+                  subjected to a rigorous peer-review process. All accepted papers will be published in
+                   <strong>Open Access</strong>,a peer-reviewed journal, <strong>Research Cell:
+                     An International Journal of Engineering Sciences (ISSN: 2229-6913)(Print),
+                     (ISSN: 2320-0332)(Online).</strong>
+            </p>
         </div>
         <div class="mt-lg-4">
             <a href="https://dms.icfoss.org/foss-cil-t23-2022/login" role="button" class="btn primary-button btn-lg button-width">Submit paper</a>
-            <a href="{% static 'assets/template.doc'%}"  role="button" class="btn primary-button-outlined-black btn-lg ms-lg-2 ms-md-2 ms-sm-0 xs-margin-top-outlined button-width" download>Download Template</a>
+            <a href="{% static 'assets/template.doc'%}"  role="button" class="btn primary-button-outlined-black btn-lg ms-lg-2 ms-md-2 ms-sm-0 xs-margin-top-outlined button-width" download><i class="bi bi-file-earmark-arrow-down"></i>&nbsp;&nbsp;Download Template</a>
         </div>
 
         <!-- important dates -->
@@ -79,40 +82,80 @@
             </div>
         </section>
         <section class="div-margin mt-lg-5" data-aos="fade-up">
-            <h4>Paper Submission Guidelines</h4>
-            <p class="line-space mb-lg-3" style="color:#605e5e">All papers must be original and not simultaneously submitted to another journal or conference. All papers submitted to FOSS-CILT23 will be checked for plagiarism including self-plagiarism. If a paper is found to fall in the category of plagiarism, the paper will be automatically rejected.
-                The following paper categories are welcome:
-            </p>
-            <ul class="line-space p-0 m-0" type="none">
-                <li class="d-flex align-items-start justify-content-start  m-2">
-                    <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
-                    <span> Paper should be written in English.</span>
-                </li>
-                <li class="d-flex align-items-start justify-content-start m-2">
-                    <ion-icon name="information-circle-outline" class="me-2" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
-                    <span>View the theme and scope topics.</span>
-                </li>
-                <li class="d-flex align-items-start justify-content-start m-2">
-                    <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
-                    <span>Length of a <strong>submitted paper should be between 6 - 8 pages.</strong></span>
-                </li>
-                <li class="d-flex align-items-start justify-content-start m-2">
-                    <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
-                    <span>Paper must conform to the standard of templates for conference proceedings.</span>
-                </li>
-                <li class="d-flex align-items-start justify-content-start m-2">
-                    <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
-                    <span>Non-presented papers will be pulled from submission.</span>
-                </li>
-                <li class="d-flex align-items-start justify-content-start m-2">
-                    <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
-                    <span>All review processes are single-blind peer reviews.</span>
-                </li>
-                <li class="d-flex align-items-start justify-content-start m-2">
-                    <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
-                    <span>Full paper must be submitted in PDF format through Online Submission System.</span>
-                </li>
-            </ul>
+            <div class="row">
+                <div id="paperGuidelines" class="col-lg-6" >
+                    <div class="border  rounded-3 p-lg-5 p-4">
+                        <h4 class="m-0 mb-2">Paper Submission Guidelines</h4>
+                        <p class="line-space mb-lg-3 m-0" style="color:#605e5e">All papers must be original and not simultaneously submitted to another journal or conference. All papers submitted to FOSS-CILT23 will be checked for plagiarism including self-plagiarism. If a paper is found to fall in the category of plagiarism, the paper will be automatically rejected.
+                            The following paper categories are welcome:
+                        </p>
+                        <ul class="line-space p-0 m-0" type="none">
+                            <li class="d-flex align-items-start justify-content-start  m-2">
+                                <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span> Paper should be written in English.</span>
+                            </li>
+                            <li class="d-flex align-items-start justify-content-start m-2">
+                                <ion-icon name="information-circle-outline" class="me-2" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span>View the theme and scope topics.</span>
+                            </li>
+                            <li class="d-flex align-items-start justify-content-start m-2">
+                                <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span>Length of a <strong>submitted paper should be between 6 - 8 pages.</strong></span>
+                            </li>
+                            <li class="d-flex align-items-start justify-content-start m-2">
+                                <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span>Paper must conform to the standard of templates for conference proceedings.</span>
+                            </li>
+                            <li class="d-flex align-items-start justify-content-start m-2">
+                                <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span>Non-presented papers will be pulled from submission.</span>
+                            </li>
+                            <li class="d-flex align-items-start justify-content-start m-2">
+                                <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span>All review processes are single-blind peer reviews.</span>
+                            </li>
+                            <li class="d-flex align-items-start justify-content-start m-2">
+                                <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span>Full paper must be submitted in PDF format through Online Submission System.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="posterInstructions" class="col-lg-6 mt-lg-0 mt-md-3 mt-sm-3 xs-margin-top">
+                    <div class="border rounded-3 p-lg-5 p-4">
+                        <h4 class="m-0 mb-2">Poster Preparation Instructions</h4>
+                        <p class="line-space mb-lg-3 m-0" style="color:#605e5e">All posters must be original and not simultaneously submitted to another journal or conference. The work of the poster can be either finished or ongoing study. The presented poster can be re-written and can be published somewhere else.The criteria for the poster presentation are :
+                        </p>
+                        <ul class="line-space p-0 m-0" type="none">
+                            <li class="d-flex align-items-start justify-content-start  m-2">
+                                <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span> The poster should be in A2 format.</span>
+                            </li>
+                            <li class="d-flex align-items-start justify-content-start m-2">
+                                <ion-icon name="information-circle-outline" class="me-2" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span>The poster should be printed in eco-friendly materials.</span>
+                            </li>
+                            <li class="d-flex align-items-start justify-content-start m-2">
+                                <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span>The poster should contains the sections:
+                                    <strong>
+                                    Introduction,
+                                    Methods,
+                                    Results and
+                                    Discussion/Conclusion along with the necessary images and tables.</strong></span>
+                            </li>
+                            <li class="d-flex align-items-start justify-content-start m-2">
+                                <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span>The Poster can be prepared in either in Latex or Presentation slides.</span>
+                            </li>
+                            <li class="d-flex align-items-start justify-content-start m-2">
+                                <ion-icon name="information-circle-outline" class="me-2 mt-1" style="min-width: 28px; min-height: 28px; color: #fd7e14;"></ion-icon>
+                                <span><a href="{% static 'assets/fosscilt23-postertemplate.zip'%}" download="">Download Latex template</a> and you can edit the template either in Overleaf or TexMaker.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- available tracks -->
 
@@ -120,7 +163,7 @@
             <div class="col-lg-6">
                 <div class="div-margin row">
                     <div class="track-card p-4" data-aos="fade-up">
-                        <h4>Language Technology</h4>
+                        <h4>Language Technology and Linguistics</h4>
                         <p style="color: rgb(75, 71, 71);">Track 1</p>
                         <div class="row">
                             <div class="col-lg-6">
@@ -182,7 +225,7 @@
                 </div>
                 <div class="div-margin row">
                     <div class="track-card p-4" data-aos="fade-up">
-                        <h4 class="">Text Analysis</h4>
+                        <h4 class="">Information Retrieval and Text Analytics</h4>
                         <p style="color: rgb(75, 71, 71);">Track 2</p>
                         <div class="row">
                             <div class="col-lg-6">
@@ -236,7 +279,7 @@
             <div class="col-lg-6">
                 <div class="div-margin row">
                     <div class="track-card p-4" data-aos="fade-up">
-                        <h4 class="">Information Retrieval and Image Processing</h4>
+                        <h4 class="">Image Processing</h4>
                         <p style="color: rgb(75, 71, 71);">Track 3</p>
                         <div class="row">
                             <div class="col-lg-6">

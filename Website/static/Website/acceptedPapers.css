@@ -1,0 +1,36 @@
+
+
+
+
+
+/* ========== accepted publication card ========== */
+
+/* accepted read more button(secondary button) */
+.btn-secondary{
+    background: #FD7E14 !important;
+    border: none !important;
+}
+.btn-secondary:hover{
+    background: #f06d02 !important;
+}
+/*border and shadow of the container of accepted publications*/
+.border:hover{
+    border: none !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+/* ========== pagination ========== */
+
+.page-link{
+    color: #FD7E14 !important;
+    border: none !important;
+}
+.page-link:hover{
+    border: 1px solid #FD7E14 !important;
+    background-color: #ffffff !important;
+}
+.page-link:active{
+    color: #ffffff !important;
+    background-color: #FD7E14 !important;
+}

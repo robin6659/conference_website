@@ -1,0 +1,131 @@
+{% extends 'Website/index.html' %}
+{% load static %}
+{% block content %}
+<section class="container">
+    <h1 class="mt-5">Schedule</h1>
+    <p class="mb-4">Detailed Schedule for Conference</p>
+    <a href="{% static 'assets/schedule conference.pdf'%}"  role="button" class="btn primary-button-outlined-black btn-lg button-width" download><i class="bi bi-file-earmark-arrow-down"></i>&nbsp;&nbsp;Download Detailed Schedule</a>
+    <div class="row mt-5">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="text-center">
+                <h4>Day 1</h4>
+                <p> 22nd February 2023</p>
+            </div>
+            <div class="p-lg-2">
+                <table class="table table-bordered border border-secondary">
+                    <thead class="table-dark text-center">
+                        <th>Activity</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-weight-bold">Registration with Arrival Welcome</td>
+                            <td>8.30 AM-10.00 AM</td>
+                            <td>Park Center, Technopark</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Inaugural ceremony </td>
+                            <td>10 AM- 10.45 AM </td>
+                            <td>Travancore Hall, Technopark</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-center">Tea break (10.45 AM to 11.00 AM)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="font-weight-bold">Keynote Address:</span> <br>
+                                Paolo Rosso<br>
+                                Full Professor
+                                Technical University of Valencia, Spain</td>
+                            <td>11.00AM- 11.45 AM</td>
+                            <td>Travancore Hall, Technopark</td>
+                        </tr>
+                        <tr>
+                            <td><span class="font-weight-bold">Invited Talk:</span><br>
+                                Muthumanickavel Swaminathan<br>
+                                Lead Data Scientist
+                                Cognizant, United Kingdom</td>
+                            <td>12.00 PM-1.00 PM</td>
+                            <td>Travancore Hall, Technopark</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-center"><span class="font-weight-bold">Networking Lunch </span>(1.00 PM-2.00 PM)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Paper Presentation</td>
+                            <td>2.00 PM- 4.15 PM</td>
+                            <td>Malabar Hall, Technopark</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-center"><span class="font-weight-bold">Tea break </span>(4.15 PM to 04.30 PM)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Poster Presentation</td>
+                            <td>4.30 PM-5.30 PM</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Cultural events and Dinner</td>
+                            <td>6.00 PM onwards</td>
+                            <td>Travancore Hall, Technopark</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="text-center">
+                <h4>Day 2</h4>
+                <p>23rd February 2023</p>
+            </div>
+            <div class="p-lg-2">
+                <table class="table table-bordered border border-secondary">
+                    <thead class="table-dark text-center">
+                        <th>Activity</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="font-weight-bold">Invited Talk:</span><br>
+                                Syed Ibrahim S P<br>
+                                Professor, VIT, Chennai.</td>
+                            <td>10 AM- 11.00 AM</td>
+                            <td>Travancore Hall, Technopark</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-center"><span class="font-weight-bold">Tea break </span>(11.00 AM to 11.30 AM)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="font-weight-bold">Panel Discussion</span><br> 
+                                (NLP Ecosystems in India)</td>
+                            <td>11.30 AM- 12.30 PM</td>
+                            <td>Travancore Hall, Technopark</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"class="text-center"><span class="font-weight-bold">Networking Lunch </span>(12.30 PM-1.30 PM)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Paper Presentation</td>
+                            <td>1.30 PM-4.00 PM</td>
+                            <td>Travancore Hall, Technopark</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-center"><span class="font-weight-bold">Tea Break </span>(4.00 PM- 4.30 PM)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Valedictory function</td>
+                            <td>4.30 PM- 5.30 PM</td>
+                            <td>Travancore Hall, Technopark</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+</section>
+{% endblock %}

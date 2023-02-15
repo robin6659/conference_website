@@ -16,6 +16,10 @@ def acceptedpub(request):
   return render(request,"Website/acceptedPublications.html")
 def committee(request):
   return render(request,"Website/committee.html")
+def schedule(request):
+  return render(request,"Website/schedule.html")
+def acceptedPapers(request):
+  return render(request,"Website/acceptedPapers.html")
 def update(request):
   return render(request,"Website/updatePage.html")
 

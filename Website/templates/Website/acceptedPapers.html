@@ -1,7 +1,11 @@
 {% extends 'Website/index.html' %}
+{% load static %}
 {% block content %}
 <section class="container">
     <h1 class="mt-5 mb-4">Accepted Papers</h1>
+    <p>The details of accepted papers are listed below. The time slot and venue for each paper presentation
+        can be downloaded by clicking here,<a href="{% static 'assets/time slots.pdf'%}" download>Time slot and venue.</a>
+    </p>
     <table class="papers-table table table-bordered table-striped table-responsive">
         <thead class="table-dark text-center">
             <th class="col-2">Submission Id</th>
